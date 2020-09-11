@@ -1,0 +1,36 @@
+{
+  "server": {
+    "protocol": "http",
+    "hostname": "127.0.0.1",
+    "port": 5000
+  },
+  "session": {
+    "maxAge": 86400000,
+    // HTTPS-only cookies: set to `true` or the number of proxies to trust
+    "secure": false
+  },
+  "routes": {
+    "associationPath": "/link/slack"
+  },
+  "app": {
+    "name": "XNAT",
+    "associationTitle": "XNAT-Slack Association"
+  },
+  "xnat": {
+    "host": {
+      "protocol": "http",
+      "hostname": "localhost",
+      "port": 8080
+    }
+  },
+  "oauth": {
+    "clientId": "xnat-client",
+    "clientSecret": "password",
+    "accessTokenUri": "https://mirrir-dev-cho1.nrg.wustl.edu/oauth/token",
+    "authorizationUri": "https://mirrir-dev-cho1.nrg.wustl.edu/oauth/authorize",
+    "redirectUri": "/login/oauth2/code/",
+    "scopes": [
+      "read"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+/node_modules
+
+/data/*
+!/data/.gitkeep
+/config/*
+!/config/default.json
+
+*.log
+.nvmrc
+.env
